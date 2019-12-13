@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var menuButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        toggleMenuViewAppearance()
+       
     }
+    
+    func toggleMenuViewAppearance(){
+        
+    }
+    
 
-
+    @IBAction func menuButtonTapped(_ sender: UIButton) {
+        toggleMenuViewAppearance()
+    }
+    @IBAction func dismissMenuViewButtonTapped(_ sender: UIButton) {
+        toggleMenuViewAppearance()
+    }
+    
 }
 
