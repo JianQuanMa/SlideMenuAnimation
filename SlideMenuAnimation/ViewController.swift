@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var dismissMenuViewButton: UIButton!
-    @IBOutlet weak var menuViewCurveImageView: UIImageView!
     @IBOutlet weak var menuViewButton1: UIButton!
     @IBOutlet weak var menuViewButton2: UIButton!
     @IBOutlet weak var menuViewButton3: UIButton!
@@ -23,11 +22,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuViewButton7: UIButton!
     private var menuViewButtonList: [UIButton]?
     @IBOutlet weak var menuView: UIView!
-    
+        @IBOutlet weak var menuViewCurveImageView: UIImageView!
     override func viewDidLoad() {
         menuViewButtonList = [menuViewButton1, menuViewButton2, menuViewButton3, menuViewButton4, menuViewButton5, menuViewButton6, menuViewButton7]
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+   //     menuViewCurveImageView.image = #imageLiteral(resourceName: "MenuCurve")
         toggleMenuViewAppearance()
         
     }
