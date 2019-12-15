@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         menuViewButtonList = [menuViewButton1, menuViewButton2, menuViewButton3, menuViewButton4, menuViewButton5, menuViewButton6, menuViewButton7]
         
         super.viewDidLoad()
-   //     menuViewCurveImageView.image = #imageLiteral(resourceName: "MenuCurve")
+        menuViewCurveImageView.image = #imageLiteral(resourceName: "MenuCurve")
         toggleMenuViewAppearance()
         
     }
@@ -39,20 +39,20 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.7, animations: {
                 self.dismissMenuViewButton.alpha = 1
             })
-            animateShowComponents(components: [self.menuViewCurveImageView], duration: 0.5, delay: 0.1)
+            animateShowComponents(components: [self.menuViewCurveImageView], duration: 0.5, delay: 0.05)
             animateShowComponents(components: [self.menuViewButton4], duration: 0.4, delay: 0)
-            animateShowComponents(components: [self.menuViewButton3, self.menuViewButton5], duration: 0.4, delay: 0.1)
-            animateShowComponents(components: [self.menuViewButton2, self.menuViewButton6], duration: 0.4, delay: 0.2)
-            animateShowComponents(components: [self.menuViewButton1, self.menuViewButton7], duration: 0.4, delay: 0.3)
+            animateShowComponents(components: [self.menuViewButton3, self.menuViewButton5], duration: 0.4, delay: 0.05)
+            animateShowComponents(components: [self.menuViewButton2, self.menuViewButton6], duration: 0.4, delay: 0.1)
+            animateShowComponents(components: [self.menuViewButton1, self.menuViewButton7], duration: 0.4, delay: 0.15)
         }else{//if the menu view is not hidden, hide it and perform animation to hide the buttons
             UIView.animate(withDuration: 0.7, animations: {
                 self.dismissMenuViewButton.alpha = 0
             })
             animateHideComponents(components: [self.menuViewButton1, self.menuViewButton7], duration: 0.4, delay: 0)
-            animateHideComponents(components: [self.menuViewButton2, self.menuViewButton6], duration: 0.4, delay: 0.1)
-            animateHideComponents(components: [self.menuViewButton3, self.menuViewButton5], duration: 0.4, delay: 0.2)
-            animateHideComponents(components: [self.menuViewCurveImageView], duration: 0.5, delay: 0.1)
-            UIView.animate(withDuration: 0.4, delay: 0.3, options: [.curveEaseOut, .allowUserInteraction], animations: {
+            animateHideComponents(components: [self.menuViewButton2, self.menuViewButton6], duration: 0.4, delay: 0.05)
+            animateHideComponents(components: [self.menuViewButton3, self.menuViewButton5], duration: 0.4, delay: 0.1)
+            animateHideComponents(components: [self.menuViewCurveImageView], duration: 0.5, delay: 0)
+            UIView.animate(withDuration: 0.65, delay: 0.15, options: [.curveEaseOut, .allowUserInteraction], animations: {
                 self.menuViewButton4.transform = CGAffineTransform(translationX: -self.menuView.frame.width, y: 0)
             }) { success in
                 self.menuView.isHidden = true
