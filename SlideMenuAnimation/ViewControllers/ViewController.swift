@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    //MARK: outlets
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var dismissMenuViewButton: UIButton!
     @IBOutlet weak var menuViewButton1: UIButton!
@@ -22,7 +22,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuViewButton7: UIButton!
     private var menuViewButtonList: [UIButton]?
     @IBOutlet weak var menuView: UIView!
-        @IBOutlet weak var menuViewCurveImageView: UIImageView!
+    @IBOutlet weak var menuViewCurveImageView: UIImageView!
+    
+    //MARK: variables
+    private let daysInWeek = [""]
+    
     override func viewDidLoad() {
         menuViewButtonList = [menuViewButton1, menuViewButton2, menuViewButton3, menuViewButton4, menuViewButton5, menuViewButton6, menuViewButton7]
         
@@ -51,8 +55,10 @@ class ViewController: UIViewController {
             animateHideComponents(components: [self.menuViewButton1, self.menuViewButton7], duration: 0.4, delay: 0)
             animateHideComponents(components: [self.menuViewButton2, self.menuViewButton6], duration: 0.4, delay: 0.05)
             animateHideComponents(components: [self.menuViewButton3, self.menuViewButton5], duration: 0.4, delay: 0.1)
-            animateHideComponents(components: [self.menuViewCurveImageView], duration: 0.5, delay: 0)
-            UIView.animate(withDuration: 0.65, delay: 0.15, options: [.curveEaseOut, .allowUserInteraction], animations: {
+            UIView.animate(withDuration: 0.4, delay: 0.05, options: [.curveEaseOut, .allowUserInteraction], animations: {
+                self.menuViewCurveImageView.transform = CGAffineTransform(translationX: -self.menuViewCurveImageView.frame.width, y: 0)
+            })
+            UIView.animate(withDuration: 0.4, delay: 0.15, options: [.curveEaseOut, .allowUserInteraction], animations: {
                 self.menuViewButton4.transform = CGAffineTransform(translationX: -self.menuView.frame.width, y: 0)
             }) { success in
                 self.menuView.isHidden = true

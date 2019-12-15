@@ -15,12 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-zG-0rA" userLabel="dismissMenuViewButton">
-                                <rect key="frame" x="50" y="44" width="364" height="818"/>
-                                <connections>
-                                    <action selector="dismissMenuViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBI-K4-0wo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-4X-5ig" userLabel="menuButton">
                                 <rect key="frame" x="15" y="59" width="30" height="30"/>
                                 <constraints>
@@ -85,16 +79,49 @@
                                     <constraint firstAttribute="width" constant="50" id="xf0-oO-De9"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y65-EA-3BJ">
+                                <rect key="frame" x="50" y="44" width="364" height="409"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="detail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-Ao-CcE">
+                                <rect key="frame" x="50" y="487" width="364" height="375"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmg-gx-3G5">
+                                <rect key="frame" x="50" y="453" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-zG-0rA" userLabel="dismissMenuViewButton">
+                                <rect key="frame" x="50" y="44" width="364" height="818"/>
+                                <connections>
+                                    <action selector="dismissMenuViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBI-K4-0wo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="y65-EA-3BJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0gK-TJ-UXq"/>
                             <constraint firstItem="wTT-4X-5ig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="2pS-Kj-Lnl"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9vq-hQ-KSQ"/>
+                            <constraint firstItem="y65-EA-3BJ" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="AJO-hq-iZS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmg-gx-3G5" secondAttribute="trailing" id="FP7-pm-Tlm"/>
+                            <constraint firstItem="vmg-gx-3G5" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="FSx-XF-R8D"/>
+                            <constraint firstItem="y65-EA-3BJ" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="Hvm-aD-WCN"/>
                             <constraint firstItem="wTT-4X-5ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Jx3-tA-o1e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2pa-zG-0rA" secondAttribute="bottom" id="LKJ-yA-pEP"/>
                             <constraint firstItem="2pa-zG-0rA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MH6-LD-gnr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0l-Ao-CcE" secondAttribute="trailing" id="NMK-RF-3fk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2pa-zG-0rA" secondAttribute="trailing" id="VIT-dL-oOb"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VVT-dI-fis"/>
+                            <constraint firstItem="vmg-gx-3G5" firstAttribute="top" secondItem="y65-EA-3BJ" secondAttribute="bottom" id="bMy-Ib-1iX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y65-EA-3BJ" secondAttribute="trailing" id="hsS-ai-WFo"/>
+                            <constraint firstItem="H0l-Ao-CcE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="j5b-0a-6fU"/>
+                            <constraint firstItem="H0l-Ao-CcE" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="j9i-MF-GpA"/>
+                            <constraint firstItem="H0l-Ao-CcE" firstAttribute="top" secondItem="vmg-gx-3G5" secondAttribute="bottom" id="q78-jR-5Fw"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ubh-1Y-9Rz"/>
                             <constraint firstItem="2pa-zG-0rA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-364" id="viO-D7-sZt"/>
                         </constraints>
