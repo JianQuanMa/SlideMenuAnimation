@@ -83,12 +83,11 @@
 		4ECF6ADA239F13B50004FE25 /* SlideMenuAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				4EE24E5C23A6FA4B004A84FB /* ViewControllers */,
 				4EE24E5723A6EA5C004A84FB /* Storyboards */,
 				4EE24E5623A6EA50004A84FB /* Views */,
+				4EE24E5C23A6FA4B004A84FB /* ViewControllers */,
 				4ECF6ADB239F13B50004FE25 /* AppDelegate.swift */,
 				4ECF6ADD239F13B50004FE25 /* SceneDelegate.swift */,
-				4ECF6AE4239F13B90004FE25 /* Assets.xcassets */,
 				4ECF6AE9239F13B90004FE25 /* Info.plist */,
 			);
 			path = SlideMenuAnimation;
@@ -106,6 +105,7 @@
 		4EE24E5623A6EA50004A84FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4ECF6AE4239F13B90004FE25 /* Assets.xcassets */,
 				4EE24E5823A6EEB6004A84FB /* TODOCell.swift */,
 				4EE24E5923A6EEB6004A84FB /* TODOCell.xib */,
 			);

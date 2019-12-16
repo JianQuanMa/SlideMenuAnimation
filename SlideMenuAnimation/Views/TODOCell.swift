@@ -24,11 +24,13 @@ class TODOCell: UITableViewCell {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var isFinsihedButton: UIButton!
+   
     var isFinishedImage: UIImage?
     var event: Event?
-
+    static var identifier = "TODOCell"
+    static var nib = UINib(nibName: identifier, bundle: nil)
     func setUpCell(event: Event){
-        
+        self.event = event
         self.titleTextField.text = event.title
         isFinishedImage = event.isFinished ?  #imageLiteral(resourceName: "finishedStar") : #imageLiteral(resourceName: "unfinishedStar")
         self.isFinsihedButton.setImage(isFinishedImage, for: .normal)

@@ -15,8 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y65-EA-3BJ">
+                                <rect key="frame" x="50" y="44" width="364" height="409"/>
+                                <color key="backgroundColor" red="0.96863494059999999" green="1" blue="0.71508871460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96863494059999999" green="1" blue="0.71508871460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hAd-5F-FQ5"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmg-gx-3G5">
+                                <rect key="frame" x="0.0" y="453" width="414" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="can you see the detail?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-Ao-CcE">
+                                <rect key="frame" x="0.0" y="487" width="414" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-4X-5ig" userLabel="menuButton">
                                 <rect key="frame" x="15" y="59" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="jKZ-c1-rkn"/>
                                     <constraint firstAttribute="height" constant="30" id="tls-dy-clw"/>
@@ -24,6 +46,13 @@
                                 <state key="normal" title="Button" image="MenuButtonImage"/>
                                 <connections>
                                     <action selector="menuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDX-Wr-efe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-zG-0rA" userLabel="dismissMenuViewButton">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="dismissMenuViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBI-K4-0wo"/>
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwV-CX-u8g" userLabel="menuView">
@@ -67,7 +96,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.96863494059999999" green="1" blue="0.71508871460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="vhg-iu-JcH" firstAttribute="centerY" secondItem="rwV-CX-u8g" secondAttribute="centerY" id="Lyl-tt-1t2"/>
@@ -79,56 +108,35 @@
                                     <constraint firstAttribute="width" constant="50" id="xf0-oO-De9"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y65-EA-3BJ">
-                                <rect key="frame" x="50" y="44" width="364" height="409"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="detail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-Ao-CcE">
-                                <rect key="frame" x="50" y="487" width="364" height="375"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmg-gx-3G5">
-                                <rect key="frame" x="50" y="453" width="364" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-zG-0rA" userLabel="dismissMenuViewButton">
-                                <rect key="frame" x="50" y="44" width="364" height="818"/>
-                                <connections>
-                                    <action selector="dismissMenuViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBI-K4-0wo"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96863494059999999" green="1" blue="0.71508871460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="y65-EA-3BJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0gK-TJ-UXq"/>
                             <constraint firstItem="wTT-4X-5ig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="2pS-Kj-Lnl"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9vq-hQ-KSQ"/>
                             <constraint firstItem="y65-EA-3BJ" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="AJO-hq-iZS"/>
+                            <constraint firstItem="vmg-gx-3G5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bep-KY-rIO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmg-gx-3G5" secondAttribute="trailing" id="FP7-pm-Tlm"/>
-                            <constraint firstItem="vmg-gx-3G5" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="FSx-XF-R8D"/>
-                            <constraint firstItem="y65-EA-3BJ" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="Hvm-aD-WCN"/>
                             <constraint firstItem="wTT-4X-5ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Jx3-tA-o1e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2pa-zG-0rA" secondAttribute="bottom" id="LKJ-yA-pEP"/>
-                            <constraint firstItem="2pa-zG-0rA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MH6-LD-gnr"/>
+                            <constraint firstItem="2pa-zG-0rA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MH6-LD-gnr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0l-Ao-CcE" secondAttribute="trailing" id="NMK-RF-3fk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2pa-zG-0rA" secondAttribute="trailing" id="VIT-dL-oOb"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VVT-dI-fis"/>
+                            <constraint firstItem="2pa-zG-0rA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YwX-1N-YmH"/>
                             <constraint firstItem="vmg-gx-3G5" firstAttribute="top" secondItem="y65-EA-3BJ" secondAttribute="bottom" id="bMy-Ib-1iX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y65-EA-3BJ" secondAttribute="trailing" id="hsS-ai-WFo"/>
                             <constraint firstItem="H0l-Ao-CcE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="j5b-0a-6fU"/>
-                            <constraint firstItem="H0l-Ao-CcE" firstAttribute="leading" secondItem="rwV-CX-u8g" secondAttribute="trailing" id="j9i-MF-GpA"/>
+                            <constraint firstItem="H0l-Ao-CcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j9i-MF-GpA"/>
+                            <constraint firstItem="y65-EA-3BJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="q69-a6-5ct"/>
                             <constraint firstItem="H0l-Ao-CcE" firstAttribute="top" secondItem="vmg-gx-3G5" secondAttribute="bottom" id="q78-jR-5Fw"/>
                             <constraint firstItem="rwV-CX-u8g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ubh-1Y-9Rz"/>
-                            <constraint firstItem="2pa-zG-0rA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-364" id="viO-D7-sZt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="dismissMenuViewButton" destination="2pa-zG-0rA" id="1b8-dW-qY1"/>
+                        <outlet property="eventDescriptionTextView" destination="H0l-Ao-CcE" id="Dns-SV-cSq"/>
                         <outlet property="menuButton" destination="wTT-4X-5ig" id="VsO-qQ-MtH"/>
                         <outlet property="menuView" destination="rwV-CX-u8g" id="T7B-I7-BhZ"/>
                         <outlet property="menuViewButton1" destination="xC4-HW-JXB" id="Yyk-bT-Cb3"/>
@@ -139,6 +147,8 @@
                         <outlet property="menuViewButton6" destination="De2-zD-XYd" id="cyX-54-HdP"/>
                         <outlet property="menuViewButton7" destination="NsJ-89-7OS" id="NJk-QT-pO1"/>
                         <outlet property="menuViewCurveImageView" destination="D7i-0r-Opf" id="U1v-hM-SfZ"/>
+                        <outlet property="tableView" destination="y65-EA-3BJ" id="q4E-pt-Gdg"/>
+                        <outlet property="titleTextField" destination="vmg-gx-3G5" id="VrF-K1-sCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "46D9F4FF-86E2-4335-A9A7-950A77F1A5AA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDACBE0D-7FBD-41AD-80CF-B377DD21B44E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlideMenuAnimation/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "681F258E-1575-450D-BBAF-8C67B1D659BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlideMenuAnimation/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10CB83E6-ACD4-4B49-892D-FF4FBDC52ADF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlideMenuAnimation/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A395E4C-C6E1-41FB-B2B8-56DB017C8997"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlideMenuAnimation/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "dismissMenuViewButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "952828DF-1602-4B16-BC22-6B8C1A900165"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlideMenuAnimation/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - a18dcdb2efa5e4b1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.titleTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - 40e6281f8c5a18ad"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.titleTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - ceae5989786843be"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.titleTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - fb3598a5ac2af6bb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.titleTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - ed8f8d5aa10bd435"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SlideMenuAnimation.ViewController"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1509">
+               </Location>
+               <Location
+                  uuid = "952828DF-1602-4B16-BC22-6B8C1A900165 - ff9dc0b53158c970"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlideMenuAnimation.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SlideMenuAnimation.ViewController&gt;"
+                  moduleName = "SlideMenuAnimation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jianma/Documents/workplace/Personal/SlideMenuAnimation/SlideMenuAnimation/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1447">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
