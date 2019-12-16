@@ -26,17 +26,21 @@ class TODOCell: UITableViewCell {
     @IBOutlet weak var isFinsihedButton: UIButton!
    
     var isFinishedImage: UIImage?
-    var event: Event?
+    var event: Event! {
+        didSet{
+            self.titleTextField.text = self.event?.title
+            self.isFinishedImage = self.event.isFinished ?  #imageLiteral(resourceName: "finishedStar") : #imageLiteral(resourceName: "unfinishedStar")
+            self.isFinsihedButton.setImage(self.isFinishedImage, for: .normal)
+        }
+    }
     static var identifier = "TODOCell"
-    static var nib = UINib(nibName: identifier, bundle: nil)
     func setUpCell(event: Event){
         self.event = event
-        self.titleTextField.text = event.title
-        isFinishedImage = event.isFinished ?  #imageLiteral(resourceName: "finishedStar") : #imageLiteral(resourceName: "unfinishedStar")
-        self.isFinsihedButton.setImage(isFinishedImage, for: .normal)
+//        self.titleTextField.text = event.title
+//        isFinishedImage = event.isFinished ?  #imageLiteral(resourceName: "finishedStar") : #imageLiteral(resourceName: "unfinishedStar")
+//        self.isFinsihedButton.setImage(isFinishedImage, for: .normal)
     }
     @IBAction func isFinishedButtonTapped(_ sender: UIButton) {
         event?.isFinished.toggle()
     }
-    
 }

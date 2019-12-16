@@ -116,8 +116,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableView.dequeueReusableCell(withIdentifier: TODOCell.identifier, index) as! TODOCell
         let cell = tableView.dequeueReusableCell(withIdentifier: TODOCell.identifier, for: indexPath) as! TODOCell
-        cell.backgroundView?.backgroundColor = #colorLiteral(red: 0.9612876773, green: 1, blue: 0.679187417, alpha: 1) //cell.contentView.backgroundColor
-        cell.event = event
+        cell.backgroundView?.backgroundColor = #colorLiteral(red: 0.9612876773, green: 1, blue: 0.679187417, alpha: 1) 
+        cell.event = self.event
+        self.titleTextField.text = self.event.title
+        self.eventDescriptionTextView.text = self.event.desp
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -125,7 +127,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
+    
     
 }
