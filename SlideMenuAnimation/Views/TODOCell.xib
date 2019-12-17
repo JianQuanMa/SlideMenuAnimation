@@ -17,18 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktx-3X-WwL">
-                        <rect key="frame" x="182" y="100" width="520" height="34"/>
+                        <rect key="frame" x="175.5" y="100" width="526.5" height="34"/>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.97351241440000003" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-1F-c0P">
-                        <rect key="frame" x="0.0" y="0.0" width="182" height="233"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-1F-c0P">
+                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="234"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="xXs-1F-c0P" secondAttribute="height" multiplier="182:233" id="u0Z-6B-2nQ"/>
-                        </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal">
+                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
                         <connections>
                             <action selector="isFinishedButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PQi-aI-GBZ"/>
                         </connections>
@@ -37,11 +36,12 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="ktx-3X-WwL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3oJ-E6-be5"/>
-                    <constraint firstItem="xXs-1F-c0P" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.128205" constant="203" id="5Lm-5h-VKv"/>
+                    <constraint firstAttribute="bottom" secondItem="xXs-1F-c0P" secondAttribute="bottom" id="43j-Qc-BO4"/>
                     <constraint firstAttribute="trailing" secondItem="ktx-3X-WwL" secondAttribute="trailing" id="8GP-PI-YrS"/>
-                    <constraint firstItem="xXs-1F-c0P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qOJ-Ka-5PR"/>
-                    <constraint firstItem="ktx-3X-WwL" firstAttribute="leading" secondItem="xXs-1F-c0P" secondAttribute="trailing" id="sPw-yc-3dm"/>
-                    <constraint firstItem="xXs-1F-c0P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="seh-C0-dN2"/>
+                    <constraint firstItem="xXs-1F-c0P" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="Oec-PB-BN0"/>
+                    <constraint firstItem="xXs-1F-c0P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="U7U-Qf-WZn"/>
+                    <constraint firstItem="xXs-1F-c0P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pn1-hK-fWj"/>
+                    <constraint firstItem="ktx-3X-WwL" firstAttribute="leading" secondItem="xXs-1F-c0P" secondAttribute="trailing" id="sn2-j9-thW"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +50,7 @@
                 <outlet property="isFinsihedButton" destination="xXs-1F-c0P" id="yEp-UB-Jzj"/>
                 <outlet property="titleTextField" destination="ktx-3X-WwL" id="wYX-AX-bX1"/>
             </connections>
-            <point key="canvasLocation" x="50.724637681159422" y="24.776785714285712"/>
+            <point key="canvasLocation" x="-55" y="2"/>
         </tableViewCell>
     </objects>
 </document>

@@ -16,6 +16,8 @@
 		4ECF6AF3239F13B90004FE25 /* SlideMenuAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF6AF2239F13B90004FE25 /* SlideMenuAnimationTests.swift */; };
 		4EE24E5A23A6EEB6004A84FB /* TODOCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE24E5823A6EEB6004A84FB /* TODOCell.swift */; };
 		4EE24E5B23A6EEB6004A84FB /* TODOCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE24E5923A6EEB6004A84FB /* TODOCell.xib */; };
+		4EE24E6023A83CE8004A84FB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE24E5F23A83CE8004A84FB /* Event.swift */; };
+		4EE24E6323A83DB3004A84FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE24E6223A83DB3004A84FB /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4ECF6AF4239F13B90004FE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EE24E5823A6EEB6004A84FB /* TODOCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOCell.swift; sourceTree = "<group>"; };
 		4EE24E5923A6EEB6004A84FB /* TODOCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODOCell.xib; sourceTree = "<group>"; };
+		4EE24E5F23A83CE8004A84FB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4EE24E6223A83DB3004A84FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		4ECF6ADA239F13B50004FE25 /* SlideMenuAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				4EE24E6123A83DA6004A84FB /* ViewModel */,
+				4EE24E5D23A83CBE004A84FB /* Model */,
 				4EE24E5723A6EA5C004A84FB /* Storyboards */,
 				4EE24E5623A6EA50004A84FB /* Views */,
 				4EE24E5C23A6FA4B004A84FB /* ViewControllers */,
@@ -127,6 +133,30 @@
 				4ECF6ADF239F13B50004FE25 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4EE24E5D23A83CBE004A84FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EE24E5E23A83CD3004A84FB /* New Group */,
+				4EE24E5F23A83CE8004A84FB /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EE24E5E23A83CD3004A84FB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4EE24E6123A83DA6004A84FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EE24E6223A83DB3004A84FB /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +265,8 @@
 				4ECF6ADC239F13B50004FE25 /* AppDelegate.swift in Sources */,
 				4ECF6ADE239F13B50004FE25 /* SceneDelegate.swift in Sources */,
 				4EE24E5A23A6EEB6004A84FB /* TODOCell.swift in Sources */,
+				4EE24E6323A83DB3004A84FB /* ViewModel.swift in Sources */,
+				4EE24E6023A83CE8004A84FB /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

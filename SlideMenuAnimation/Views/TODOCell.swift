@@ -8,29 +8,20 @@
 
 import UIKit
 
-struct Event {
-    var title: String
-    var isFinished: Bool
-    var desp: String
-    
-    init(title: String, isFinished: Bool, desp: String) {
-        self.title = title
-        self.isFinished = isFinished
-        self.desp = desp
-    }
-}
-
 class TODOCell: UITableViewCell {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var isFinsihedButton: UIButton!
    
     var isFinishedImage: UIImage?
-    var event: Event! {
+    var event: Event! { 
         didSet{
             self.titleTextField.text = self.event?.title
             self.isFinishedImage = self.event.isFinished ?  #imageLiteral(resourceName: "finishedStar") : #imageLiteral(resourceName: "unfinishedStar")
-            self.isFinsihedButton.setImage(self.isFinishedImage, for: .normal)
+            print(self.event.isFinished)
+            DispatchQueue.main.async {
+                 self.isFinsihedButton.setImage(self.isFinishedImage, for: .normal)
+            }
         }
     }
     static var identifier = "TODOCell"
